@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLU</title>
+    <script type="text/javascript" src="jquery-1.3.2.js"></script>
+    <link rel="stylesheet" href="webTLU.css">
+    <script src="TLU.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div style="border: 10px solid rgb(9, 9, 155);"></div>
+    <header>
+        <div class="hd1">
+            <div><img src="logoTLU.png" alt="" style="width: 120px; padding: 20px;" ></div>
+            <div class="hd1-1">
+                    <h1>TRƯỜNG ĐẠI HỌC THUỶ LỢI</h1>
+                    <span class="tlu">THUY LOI UNIVERSITY</span>
+            </div>
+            <div class="">
+                <div class="hd1-2">
+                    <a href="https://www.tlu.edu.vn/login.html">Login</a>
+                    <a href="http://www.tlu.edu.vn/"> <img src="https://www.tlu.edu.vn/Portals/_default/skins/tluvie/images/front/vi.jpg" alt=""></a>
+                    <a href="http://en.tlu.edu.vn/"><img src="https://www.tlu.edu.vn/Portals/_default/skins/tluvie/images/front/en.jpg" alt=""></a>
+                    <hr>
+                </div>
+                <div class="hd1-3">
+                    <span><i class="fa-solid fa-magnifying-glass" style="color: #747576;"></i></span>
+                    <span class="timkiem"><input type="text" placeholder="Tìm kiếm"></span>
+                    <span class="tim"><input type="button" value="Tìm"></span>    
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div>
+            <div class="nav1">
+                <ul class="nav1-1">
+                    <li><a href="https://www.tlu.edu.vn/"><i class="fa-solid fa-house" style="color: white; padding: 2px;"></i></a> </li>
+                    <span>|</span>
+                    <li><a href="https://www.tlu.edu.vn/gioi-thieu">GIỚI THIỆU</a>
+                        <ul class="menucon1">
+                            <li><a href="https://www.tlu.edu.vn/Tong-quan">》Tổng quan</a</li>
+                            <li><a href="https://www.tlu.edu.vn/Su-mang-tam-nhin">》Sứ mạng,Tầm nhìn</a></li> 
+                            <li><a href="https://www.tlu.edu.vn/Co-cau-to-chuc-va-nhan-luc">》Cơ cấu tổ chức và nhân lực</a></li>
+                            <li><a href="https://www.tlu.edu.vn/Co-so-vat-chat">》Cơ sở vật chất</a></li>
+                            <li><a href="https://www.tlu.edu.vn/cong-tac-dang">》Công tác Đảng</a></li>
+                            <li><a href="https://www.tlu.edu.vn/cong-tac-cong-doan">》Công tác Công đoàn</a></li>
+                        </ul> 
+                    </li>
+                    <span>|</span>
+                    <li><a href="https://www.tlu.edu.vn/Tin-tuc-thong-bao"> TIN TỨC & THÔNG BÁO</a>
+                        <ul class="menucon2">
+                            <li><a href="https://www.tlu.edu.vn/Tin-tuc">》Tin tức</a></li>
+                            <li><a href="https://www.tlu.edu.vn/Thong-bao">》Thông báo</a></li>
+                        </ul>
+                    </li>
+                    <span>|</span>
+                    <li><a href="http://ts.tlu.edu.vn/">TUYỂN SINH</a>
+                        <ul class="menucon3">
+                            <li><a href="http://ts.tlu.edu.vn/Tuy%E1%BB%83n-sinh-%C4%90H">》Tuyển sinh đại học</a></li>
+                            <li><a href="http://ts.tlu.edu.vn/tin-tuyen-sinh-thac-si">》Tuyển sinh thạc sĩ</a></li>
+                            <li><a href="http://ts.tlu.edu.vn/tin-tuyen-tien-si">》Tuyển sinh Tiến sĩ</a></li>
+                            <li><a href="https://www.tlu.edu.vn/Vua-lam-vua-hoc">》Vừa làm vừa học</a></li>
+                        </ul>
+                    </li>
+                    <span>|</span>
+                    <li><a href="https://www.tlu.edu.vn/Dao-tao">ĐÀO TẠO</a>
+                        <ul class="menucon4">
+                            <li><a href="https://www.tlu.edu.vn/thac-si">》Thạc sĩ</a></li>
+                            <li><a href="https://www.tlu.edu.vn/Dai-hoc-chinh-quy">》Đại học chính quy</a></li>
+                            <li><a href="https://www.tlu.edu.vn/cam-ket-dam-bao-chat-luong-dao-tao">》Cam kết đảm bảo chất lượng
+                                đạo tao</a></li>
+                            <li><a href="https://www.tlu.edu.vn/thong-bao-tin-tuc-dhcq">》Thông báo,tin tức dhcq</a></li>
+                            <li><a href="https://www.tlu.edu.vn/Tien-si">》Tiến sĩ</a></li>
+                            <li><a href="https://www.tlu.edu.vn/Vua-lam-vua-hoc">》Vừa làm vừa học</a></li>
+                        </ul>
+                    </li>
+                    <span>|</span>
+                    <li><a href="https://www.tlu.edu.vn/nghien-cuu">NGHIÊN CỨU</a>
+                        <ul class="menucon5">
+                            <li><a href="">》Tin khoa học công nghệ</a></li>
+                            <li><a href="">》NCKH & Chuyển giao công nghệ</a></li>
+                            <li><a href="">》Quỹ phát triển KH & CN</a></li>
+                            <li><a href="">》Sỡ hữu trí tuệ</a></li>
+                            <li><a href="">》Nhóm nghiên cứu mạnh</a></li>
+                            <li><a href="">》Các đơn vị KHCN</a></li>
+                            <li><a href="">》Hội nghị,hội thảo</a></li>
+                            <li><a href="">》Tạp trí KHKT Thuỷ Lợi & Môi trường</a></li>
+                            <li><a href="">》Văn bản, quy chế, biểu mẫu</a></li>
+                            <li><a href="">》Thông báo KHCN</a></li>
+                            <li><a href="">》liên hệ</a></li>
+                        </ul>
+                    </li>
+                    <span>|</span>
+                    <li><a href="https://www.tlu.edu.vn/doi-ngoai">ĐỐI NGOẠI</a>
+                    <ul class="menucon6">
+                        <li><a href="">》Giới thiệu chung</a></li>
+                        <li><a href="">》Dự án quốc tế</a></li>
+                        <li><a href="">》Hợp tác đào tạo quốc tế</a></li>
+                        <li><a href="">》Tin tức đối ngoại</a></li>
+                        <li><a href="">》Liên hệ</a></li>
+                        <li><a href="">》Thoả thuận hợp tác</a></li>
+                        <li><a href="">》Quy chế, Quy định về đối ngoại</a></li>
+                    </ul>
+                    </li>
+                    <span>|</span>
+                    <li><a href="https://www.tlu.edu.vn/Van-ban">VĂN BẢN</a></li>
+                    <span>|</span>
+                    <li><a href="https://www.tlu.edu.vn/sinh-vien">SINH VIÊN</a>
+                    <ul class="menucon7">
+                        <li><a href="">》Thông báo</a></li>
+                        <li><a href="">》Hỗ trợ sinh viên</a></li>
+                        <li><a href="">》Sinh viên hiện tại</a></li>
+                        <li><a href="">》Hoạt động sinh viên</a></li>
+                        <li><a href="">》Học phí</a></li>
+                        <li><a href="">》Cựu sinh viên</a></li>
+                        <li><a href="">》Sinh viên tột nghiệp</a></li>
+                        <li><a href="">》Sinh viên tương lai</a></li>
+                        <li><a href="">》Giáo viên chủ nhiệm</a></li>
+                    </ul>
+                    </li>
+                    <span>|</span>
+                    <li><a href="https://www.tlu.edu.vn/tin-noi-bo">TIN NỘI BỘ</a></li>
+                    <span>|</span>
+                    <li><a href="https://www.tlu.edu.vn/lien-he-tlu">LIÊN HỆ</a></li>
+                </ul>
+                <div class="nav1-2">
+                    <img id="img" onclick="changeImage()" src="web1.jpg" alt="">
+                </div>
+            </div>   
+        </div>
+    </nav>
+    <article>
+        <div class="ar1">
+            <ul >
+                <li>
+                    <a href="">
+                        <img src="ts.png" alt="">
+                    </a><br>
+                    <a href="">Tuyển sinh</a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="ttvl.png" alt="">
+                    </a> <br>
+                    <a href="">Thông tin việc làm</a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="dbcl.png" alt="">
+                    </a><br>
+                    <a href="">Đảm bảo chất lượng</a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="tc.png" alt="">
+                    </a><br>
+                    <a href="">Tap chí</a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="tv.png" alt="">
+                    </a><br>
+                    <a href="">Thư viện</a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="mail.png" alt="">
+                    </a><br>
+                    <a href="">TLU Mail</a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="lct.png" alt="">
+                    </a><br>
+                    <a href="">Lịch công tác</a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="dkh.png" alt="">
+                    </a><br>
+                    <a href="">Đăng ký học</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="tabs">
+                <ul class="tab0">
+                    <li><a id="btn1" href="">TIN TỨC</a>
+                        <div class="tab1">
+                            <ul class="tab11">
+                                <li>
+                                    <a href="https://www.tlu.edu.vn/tin-tuc/thong-bao-tuyen-sinh-nam-2023-cua-16633">Thông báo tuyển sinh năm 2023 của Trường Đại học Thủy lợi <img src="hot.gif" alt=""></a>
+                                    <ul class="tab111">
+                                        <li class="pic"><img src="pic1.png" alt=""></li>
+                                    </ul>
+                                </li>
+                                <hr>
+                                <li>
+                                    <a href="https://www.tlu.edu.vn/tin-tuc/nhieu-su-ung-ho-danh-cho-doi-bong-da-16631">Nhiều sự ủng hộ dành cho đội bóng đá Trường ĐH Thủy lợi Nam tiến <img src="hot.gif" alt=""></a>
+                                </li>
+                                <hr>
+                                <li>
+                                    <a href="/">Hé lộ những điều chưa biết về tân Nam vương và Hoa khôi Đại học Thủy 2023 </a></li>
+                                <hr>
+                                <li>
+                                    <a href="/">Hai anh em ruột cùng chung đội tuyển trường </a>
+                                </li>
+                                <hr>
+                                <li>
+                                    <a href="/">Nước mắt rơi ở tứ kết giải bóng đá Thanh Niên Sinh viên </a>
+                                </li>
+                                <hr>
+                            </ul>
+                        </div>
+                    </li>   
+                    <li><a id="btn2" href="">THÔNG BÁO</a> 
+                        <div lass="tab2">
+                        <ul class="tab12">
+                            <li>
+                                <a href="">Khảo sát ý kiến sinh viên tốt nghiệp đợt học kì 1 năm học 2022-2023 về tình hình việc làm và đánh giá các hoạt động của Nhà trường</a></li>
+                            <hr>
+                                <li><a href="">Hướng dẫn thực hiện miễn giảm học phí đối với sinh viên tại cơ sở Hà Nội Học kỳ II năm học 2022-2023</a></li>
+                            <hr>
+                                <li><a href="">Hướng dẫn thực hiện hỗ trợ học tập, hỗ trợ chi phí học tập và trợ cấp xã hội đối với sinh viên tại cơ sở Hà Nội Học kỳ II, năm học 2022 - 2023</a></li>
+                            <hr>
+                                <li><a href="">Một số thông tin phục vụ sinh hoạt lớp tháng 2&3/2023</a></li>
+                            <hr>
+                                <li><a href="">Kế hoạch tổ chức gặp mặt và đối thoại với sinh viên năm học 2022 – 2023</a></li>
+                            <hr>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+    </div>
+    <div class="xem">
+        <br>
+        <span><a href="https://www.tlu.edu.vn/tin-tuc">》Xem tất cả</a></span>
+    </div>
+    </article>
+    <aside>
+        <h3>PHÂN HIỆU-KHOA</h3>
+        <ul>
+            <li><a href="https://tlus.edu.vn/">Phân hiệu Đại học Thuỷ Lợi</a></li>
+            <li><a href="https://ce.tlu.edu.vn/">Khoa công trình</a></li>
+            <li><a href="https://kttnn.tlu.edu.vn/">Khoa Kỹ thuật tài nguyên nước</a></li>
+            <li><a href="https://cse.tlu.edu.vn/">Khoa Công nghệ thông tin</a></li>
+            <li><a href="https://khoacokhi.tlu.edu.vn/">Khoa Cơ khí</a></li>
+            <li><a href="https://ee.tlu.edu.vn/">Khoa Điện - Điện tử</a></li>
+            <li><a href="https://fem.tlu.edu.vn/">Khoa Kinh tế và Quản lý</a></li>
+            <li><a href="https://env.tlu.edu.vn/">Khoa Hoá và Môi trường</a></li>
+            <li><a href="https://sie.tlu.edu.vn/">Trung tâm Đào tạo quốc tế</a></li>
+            <li><a href="https://pl.tlu.edu.vn/">Khoa Lý luận chính trị</a></li>
+            <li><a href="http://vienmientrung.edu.vn/">Viện ĐT và KHƯD Miền Trung</a></li>
+            <li><a href="http://cra.tlu.edu.vn/">TTKH và triển khai KTTL</a></li>
+        </ul>
+    </aside>
+    <div class="div0">
+        <div class="div1">
+            <ul>
+                <li><a href="http://ts.tlu.edu.vn/"><img src="anh1.png" alt=""></a></li>
+                <li><a href="http://ts.tlu.edu.vn/tin-tuyen-sinh-thac-si"><img src="anh2.png" alt=""></a></li>
+                <li><a href="http://ts.tlu.edu.vn/tin-tuyen-tien-si"><img src="anh3.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="div2">
+            <div class="div2-1" >
+                &emsp; <h2 style="color: rgb(31, 31, 112); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">ĐÀO TẠO</h2>
+                <ul >
+                    <li><a href="https://www.tlu.edu.vn/dao-tao/thong-bao-ket-qua-thi-chuan-tieng-anh-16630"><img src="a2.png" alt=""></a> <br>
+                        <a href="https://www.tlu.edu.vn/dao-tao/thong-bao-ket-qua-thi-chuan-tieng-anh-16630">Thông báo kết quả thi chuẩn tiếng Anh đầu ra (A2) đợt 1 năm 2023</a></li>
+                    <li><a href="https://www.tlu.edu.vn/dao-tao/thong-tin-luan-an-va-thoi-gian-bao-ve-16627"><img src="TB.png" alt=""></a>
+                        <br> <br>
+                        <a href="https://www.tlu.edu.vn/dao-tao/thong-tin-luan-an-va-thoi-gian-bao-ve-16627">Thông tin luận án và thời gian bảo vệ luận án tiến sĩ cấp Trường của NCS Phạm Thị Thúy
+                        </a></li>
+                    <li><a href="https://www.tlu.edu.vn/dao-tao/thong-bao-to-chuc-thi-chuan-tieng-anh-16618"><img src="b1.png" alt=""></a>
+                        <br>
+                        <a href="https://www.tlu.edu.vn/dao-tao/thong-bao-to-chuc-thi-chuan-tieng-anh-16618">Thông báo tổ chức thi chuẩn tiếng Anh đầu ra (B1) đợt 1 năm 2023 tại Hà Nội
+                        </a></li>    
+                </ul>
+            </div>
+            <div class="div2-2">
+                <br><br><br>
+                <ul class="den">
+                    <li><a href="https://www.tlu.edu.vn/dao-tao/ket-qua-thi-tieng-anh-tang-cuong-hoc-ky-15591">Kết quả thi tiếng anh tăng cường học kỳ 1 năm học 2022-2023</a></li>
+                    <li><a href="https://www.tlu.edu.vn/dao-tao/thong-bao-ve-trien-khai-ke-hoach-hoc-ky-15586">Thông báo về triển khai kế hoạch học kỳ phụ kỳ 2 năm học...</a></li>
+                    <li><a href="https://www.tlu.edu.vn/dao-tao/danh-sach-hoc-vien-cao-hoc-tot-nghiep-15582">Danh sách học viên cao học tốt nghiệp trường đại học Thủy lợi</a></li>
+                    <li><a href="https://www.tlu.edu.vn/dao-tao/thong-tin-thoi-gian-bao-ve-luan-an-tien-15580">Thông tin thời gian bảo vệ luận án tiến sĩ cấp Trường của NCS...</a></li>
+                </ul>
+                <div class="xem1"><a href="https://www.tlu.edu.vn/dao-tao">》Xem thêm</a></div>
+            </div> 
+
+        </div>
+        <div class="div3">
+            <div class="div3-1">
+                <h2 style="color: rgb(31, 31, 112); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 30px;">ĐỐI NGOẠI</h2>
+                <ul>
+                    <li><a href="https://www.tlu.edu.vn/doi-ngoai/tiep-va-lam-viec-voi-truong-dai-hoc-ky-16648"><img src="anh4.png" alt=""></a>
+                    <br><a href="https://www.tlu.edu.vn/doi-ngoai/tiep-va-lam-viec-voi-truong-dai-hoc-ky-16648">Tiếp và làm việc với trường Đại học Kỹ thuật Bergakademie Freiberg, Cộng hòa liên bang Đức</a></li>
+                    <li><a href="https://www.tlu.edu.vn/doi-ngoai/hoan-thanh-du-an-okp-va-le-tri-an-gs-16642"><img src="anh5.png" alt=""></a>
+                    <br><a href="https://www.tlu.edu.vn/doi-ngoai/hoan-thanh-du-an-okp-va-le-tri-an-gs-16642">Hoàn thành Dự án OKP và Lễ tri ân GS. MARCEL STIVE, Đại học TUDELFT, Hà Lan</a>
+                    </li>
+                    <li><a href="https://www.tlu.edu.vn/doi-ngoai/truong-dai-hoc-thuy-loi-mo-rong-quan-he-15581"><img src="anh6.png" alt=""></a>
+                    <br><a href="https://www.tlu.edu.vn/doi-ngoai/truong-dai-hoc-thuy-loi-mo-rong-quan-he-15581">Trường Đại học Thủy lợi mở rộng quan hệ hợp tác với doanh nghiệp Nhật Bản</a></li>
+                </ul>
+            </div>
+            <div class="div3-2">
+                <ul>
+                    <li><a href="https://www.tlu.edu.vn/doi-ngoai/truong-dh-thuy-loi-ky-ket-bien-ban-ghi-15500">Trường ĐH Thủy lợi ký kết Biên bản ghi nhớ với Trường Isabela State...</a></li>
+                    <li><a href="https://www.tlu.edu.vn/doi-ngoai/truong-dh-thuy-loi-ky-ket-bien-ban-ghi-15466">Trường ĐH Thủy lợi ký kết Biên bản ghi nhớ với Tổ chức Dịch...</a></li>
+                    <li><a href="https://www.tlu.edu.vn/doi-ngoai/bi-thu-thu-nhat-cua-dai-su-quan-vuong-15452">Bí thư thứ nhất của Đại sứ quán Vương quốc Hà Lan thăm và...</a></li>
+                    <li><a href="https://www.tlu.edu.vn/doi-ngoai/du-an-an-toan-dap-viet-nam-new-15439">Dự án An toàn đập Việt Nam – New Zealand tham dự triển lãm...</a></li>
+                </ul>
+                <div class="xem1"><a href="https://www.tlu.edu.vn/doi-ngoai">》Xem thêm</a></div>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="div4-1">
+                <h2 style="color: rgb(31, 31, 112); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 30px;"> NGHIÊN CỨU</h2>
+                <ul>
+                    <li><a href="https://www.tlu.edu.vn/nghien-cuu/quyet-dinh-giao-de-tai-cap-co-so-nam-16640"><img src="anh7.png" alt=""></a><br><br><a href="">Quyết định giao đề tài cấp cơ sở năm 2023</a></li>
+                    <li><a href="https://www.tlu.edu.vn/nghien-cuu/bao-cao-tom-tat-hoi-nghi-khoa-hoc-sinh-15601"><img src="anh8.png" alt=""></a><br><a href="">Báo cáo tóm tắt Hội nghị Khoa học Sinh viên lần thứ 35, tháng 6/2022</a></li>
+                    <li><a href="https://www.tlu.edu.vn/nghien-cuu/danh-sach-de-tai-nckh-cap-co-so-nam-15592"><img src="anh9.png" alt=""></a><br><br><a href="">DANH SÁCH ĐỀ TÀI NCKH CẤP CƠ SỞ NĂM 2022</a></li>
+                </ul>
+            </div>
+            <div class="div4-2">
+                <h2 style="color: rgb(31, 31, 112); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 30px;"> SỰ KIỆN</h2>
+                <a href="http://hnkh.tlu.edu.vn/"><img src="anh10.png" alt=""></a>
+            </div>
+        </div>
+        <div class="div5">
+            <h2 style="color: rgb(31, 31, 112); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 30px;">SINH VIÊN</h2>
+            <ul>
+                <li><a href="https://www.tlu.edu.vn/sinh-vien-tuong-lai"><img src="anh11.png" alt=""></a></li>
+                <li><a href="https://www.tlu.edu.vn/sinh-vien-hien-tai"><img src="anh12.png" alt=""></a></li>
+                <li><a href="https://www.tlu.edu.vn/cuu-sinh-vien"><img src="anh13.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="div6">
+            <ul style="padding-left: 70px;">
+                <li><a href="https://www.tlu.edu.vn/sinh-vien-tuong-lai/ly-do-lua-chon-nganh-kinh-te-xay-dung-15606">Lý do lựa chọn ngành Kinh tế xây dựng,...</a></li>
+                <li><a href="https://www.tlu.edu.vn/sinh-vien-tuong-lai/tuyen-sinh-2023-5-ly-do-nen-chon-nganh-15579">Tuyển sinh 2023: 5 lý do nên chọn ngành...</a></li>
+                <li><a href="https://www.tlu.edu.vn/sinh-vien-tuong-lai/tuyen-sinh-2023-cam-nang-nganh-tai-15578">Tuyển sinh 2023: Cẩm nang Ngành Tài...</a></li>
+            </ul>
+            <ul style="padding-left: 120px;">
+                <li><a href="https://www.tlu.edu.vn/sinh-vien-hien-tai/nam-sinh-truong-dai-hoc-thuy-loi-dem-16607">Nam sinh Trường Đại học Thủy lợi đem...</a></li>
+                <li><a href="https://www.tlu.edu.vn/sinh-vien-hien-tai/co-nang-2k-chia-se-bi-quyet-rut-ngan-15572">Cô nàng 2K chia sẻ bí quyết rút ngắn...</a></li>
+                <li><a href="https://www.tlu.edu.vn/sinh-vien-hien-tai/chan-dung-nu-sinh-xinh-dep-hoc-nganh-ky-15566">Chân dung nữ sinh xinh đẹp học ngành Kỹ...</a></li>
+            </ul>
+            <ul style="padding-left: 120px;">
+                <li><a href="https://www.tlu.edu.vn/cuu-sinh-vien/cuu-sinh-vien-lop-36n-khoa-ky-thuat-16608">Cựu sinh viên lớp 36N, khoa...</a></li>
+                <li><a href="https://www.tlu.edu.vn/cuu-sinh-vien/khac-tinh-may-bay-my-15496">“Khắc tinh” máy bay Mỹ</a></li>
+                <li><a href="https://www.tlu.edu.vn/cuu-sinh-vien/cuu-sinh-vien-dai-hoc-thuy-loi-trong-15470">Cựu sinh viên Đại học Thủy...</a></li>
+            </ul>
+        </div>
+        <div style="background-color: white; padding: 50px; margin-bottom: -20px;"></div>
+        <div class="div7" style="background-color: #004eaf;">
+            <div><h1>© 2023 TRƯỜNG ĐẠI HỌC THỦY LỢI</h1></div>
+            <div style="padding-right: 100px;">
+                <a href="https://www.facebook.com/daihocthuyloi1959/?fref=ts"><img src="fb-icon.png" alt=""></a>
+                <a href="https://www.youtube.com/user/daihocthuyloi"><img src="ytb-icon.png" alt=""></a>
+                <a href="https://twitter.com/Daihocthuyloihn"><img src="twitter-icon.png" alt=""></a>
+            </div>
+        </div>
+        <div class="div8"style="background-color: #001373;">
+            <div><a href="https://www.tlu.edu.vn/#"><img src="TLU-map.png" alt=""></a></div>
+            <div><h1 style="padding-top: 50px;">TRƯỜNG ĐẠI HỌC THỦY LỢI</h1>
+                <p>Địa chỉ: 175 Tây Sơn, Đống Đa, Hà Nội <br>
+                Điện thoại: (024) 38522201 - Fax: (024) 35633351
+                <br> Email: phonghcth@tlu.edu.vn</p></div>
+        </div>
+        <a href="https://m.me/daihocthuyloi1959">
+            <div class="mess">
+                <div class="mess1">Bạn cần hỗ trợ?</div>
+                <div class="mess2"><h4>1</h4></div>
+                <div class="mess3"></div>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
